@@ -28,15 +28,6 @@ PRODUCT_MANUFACTURER := NVIDIA
 PRODUCT_CHARACTERISTICS := tv
 GAPPS_VARIANT := tvstock
 
-# The feature com.google.android.tv.installed is used to tell whether a device
-# has the pre-installed Live Channels app. This is necessary for the Play Store
-# to identify the compatible devices that can install later updates of the app.
-# Other permissions are needed to stop ATV apps crashing
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-atv.xml:system/etc/permissions/privapp-permissions-atv.xml
-
 # DRM Protected Video
 BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 1
 USE_INTEL_SECURE_AVC := true
@@ -49,8 +40,8 @@ $(call inherit-product-if-exists, vendor/widevine/fugu/device-partial.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.app_widgets.xml:system/etc/permissions/android.software.app_widgets.xml
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+# DEVICE_PACKAGE_OVERLAYS += \
+#     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
     CMFileManager
@@ -96,14 +87,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:system/etc/permissions/android.hardware.vulkan.level-0.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:system/etc/permissions/android.hardware.vulkan.version-1_0_3.xml
 
-# specific management of sep_policy.conf
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sep_policy.conf:system/etc/security/sep_policy.conf
-
 # Get rid of dex preoptimization to save space within system.img at the one
 # time cost of dexing on first boot.
-WITH_DEXPREOPT_BOOT_IMG_ONLY := false
-WITH_DEXPREOPT := true
+WITH_DEXPREOPT_BOOT_IMG_ONLY := true
+WITH_DEXPREOPT := false
 
 # Some CTS tests will be skipped based on what the initial API level that
 # shipped on device was.

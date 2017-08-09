@@ -1,2 +1,0 @@
-# DVB API device nodes
-/dev/dvb.*                  u:object_r:dvb_device:s0
