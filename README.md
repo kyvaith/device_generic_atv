@@ -27,10 +27,10 @@ Definitions for generic x86 Android TV device target
   <remove-project name="platform/packages/services/Analytics" />
 
   <remote name="kyvaith" fetch="https://github.com/kyvaith/"  />
-  <project path="bootable/newinstaller" name="bootable/newinstaller" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
-  <project path="vendor/intel/houdini" name="vendor/intel/houdini" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
+  <project path="vendor/intel/houdini" name="vendor_intel_houdini" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
   <project path="vendor/opengapps/build" name="aosp_build" clone-depth="1" revision="oreo" remote="kyvaith" />
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="kyvaith" />
   <project path="vendor/opengapps/sources/x86" name="x86" clone-depth="1" revision="master" remote="kyvaith" />
-  <project path="device/generic/atv" name="device/generic/atv" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
+  <project path="device/generic/atv" name="device_generic_atv" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
   ```
