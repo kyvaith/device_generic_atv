@@ -2,8 +2,6 @@
 Definitions for generic x86 Android TV device target
 ```
   <remove-project name="platform/bootable/newinstaller" />
-  <remove-project name="platform/development" />
-  <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/packages/apps/BasicSmsReceiver" />
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/Calendar" />
@@ -41,7 +39,6 @@ Definitions for generic x86 Android TV device target
   <remove-project name="platform/packages/providers/UserDictionaryProvider" />
   <remove-project name="platform/packages/screensavers/Basic" />
   <remove-project name="platform/packages/screensavers/PhotoTable" />
-  <remove-project name="platform/packages/services/Analytics" />
   <remove-project name="platform/packages/services/BuiltInPrintService" />
   <remove-project name="platform/packages/services/Mms" />
   <remove-project name="platform/packages/services/Telephony" />
