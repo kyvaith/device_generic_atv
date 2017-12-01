@@ -1,18 +1,36 @@
 # AndroidTV-AOSP
 Definitions for generic x86 Android TV device target
 ```
-  <project path="device/google/atv" name="device/google/atv" groups="device" />
-
-  <remote  name="LineageOS" fetch="https://github.com/LineageOS/" />
-  <project path="packages/apps/CMFileManager" name="android_packages_apps_CMFileManager" remote="LineageOS" revision="cm-14.1" />
-  <project path="external/uicommon" name="android_external_cyanogen_UICommon" remote="LineageOS" revision="cm-14.1" />
+  <remove-project name="bootable/newinstaller" />
+  <remove-project name="platform/packages/apps/BasicSmsReceiver" />
+  <remove-project name="platform/packages/apps/Browser2" />
+  <remove-project name="platform/packages/apps/Calendar" />
+  <remove-project name="platform/packages/apps/Camera2" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <remove-project name="platform/packages/apps/DevCamera" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/apps/DocumentsUI" />
+  <remove-project name="platform/packages/apps/Eleven" />
+  <remove-project name="platform/packages/apps/Email" />
+  <remove-project name="platform/packages/apps/ExactCalculator" />
+  <remove-project name="platform/packages/apps/Gallery2" />
+  <remove-project name="platform/packages/apps/HTMLViewer" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <remove-project name="platform/packages/apps/Phone" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/Taskbar" />
+  <remove-project name="platform/packages/providers/UserDictionaryProvider" />
+  <remove-project name="platform/packages/screensavers/Basic" />
+  <remove-project name="platform/packages/screensavers/PhotoTable" />
+  <remove-project name="platform/packages/services/Analytics" />
 
   <remote name="kyvaith" fetch="https://github.com/kyvaith/"  />
-  <project path="vendor/google/build" name="aosp_build" clone-depth="1" revision="master" remote="kyvaith" />
-  <project path="device/generic_tv" name="AndroidTV-AOSP" clone-depth="1" revision="master" remote="kyvaith" />
-  
-  <remote name="opengapps" fetch="https://github.com/opengapps/"  />
-  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
-  <project path="vendor/opengapps/sources/x86" name="x86" clone-depth="1" revision="master" remote="opengapps" />
-  <project path="vendor/opengapps/sources/x86_64" name="x86_64" clone-depth="1" revision="master" remote="opengapps" />
+  <project path="bootable/newinstaller" name="bootable/newinstaller" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
+  <project path="vendor/intel/houdini" name="vendor/intel/houdini" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
+  <project path="vendor/opengapps/build" name="aosp_build" clone-depth="1" revision="oreo" remote="kyvaith" />
+  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="kyvaith" />
+  <project path="vendor/opengapps/sources/x86" name="x86" clone-depth="1" revision="master" remote="kyvaith" />
+  <project path="device/generic/atv" name="device/generic/atv" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
   ```
