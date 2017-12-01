@@ -1,6 +1,26 @@
 # AndroidTV-AOSP
 Definitions for generic x86 Android TV device target
 ```
+  <remove-project name="platform/packages/providers/BlockedNumberProvider" />
+  <remove-project name="platform/packages/providers/CallLogProvider" />
+  <remove-project name="platform/packages/apps/CarrierConfig" />
+  <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
+  <remove-project name="platform/packages/apps/EmergencyInfo" />
+  <remove-project name="platform/packages/apps/ManagedProvisioning" />
+  <remove-project name="platform/packages/services/Mms" />
+  <remove-project name="platform/packages/apps/OneTimeInitializer" />
+  <remove-project name="platform/packages/apps/Provision" />
+  <remove-project name="platform/packages/apps/StorageManager" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <remove-project name="platform/packages/apps/WallpaperPicker" />
+  <remove-project name="platform/packages/wallpapers/LivePicker" />
+  <remove-project name="platform/packages/providers/BookmarkProvider" />
+  <remove-project name="platform/packages/services/BuiltInPrintService" />
+  <remove-project name="platform/packages/apps/CarrierConfig" />
+  <remove-project name="platform/development" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
   <remove-project name="bootable/newinstaller" />
   <remove-project name="platform/packages/apps/BasicSmsReceiver" />
   <remove-project name="platform/packages/apps/Browser2" />
