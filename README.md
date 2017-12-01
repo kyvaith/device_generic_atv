@@ -1,31 +1,14 @@
 # AndroidTV-AOSP
 Definitions for generic x86 Android TV device target
 ```
-  <remove-project name="platform/packages/providers/BlockedNumberProvider" />
-  <remove-project name="platform/packages/providers/CallLogProvider" />
-  <remove-project name="platform/packages/apps/CarrierConfig" />
-  <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
-  <remove-project name="platform/packages/apps/EmergencyInfo" />
-  <remove-project name="platform/packages/apps/ManagedProvisioning" />
-  <remove-project name="platform/packages/services/Mms" />
-  <remove-project name="platform/packages/apps/OneTimeInitializer" />
-  <remove-project name="platform/packages/apps/Provision" />
-  <remove-project name="platform/packages/apps/StorageManager" />
-  <remove-project name="platform/packages/providers/TelephonyProvider" />
-  <remove-project name="platform/packages/apps/WallpaperPicker" />
-  <remove-project name="platform/packages/wallpapers/LivePicker" />
-  <remove-project name="platform/packages/providers/BookmarkProvider" />
-  <remove-project name="platform/packages/services/BuiltInPrintService" />
-  <remove-project name="platform/packages/apps/CarrierConfig" />
+  <remove-project name="platform/bootable/newinstaller" />
   <remove-project name="platform/development" />
-  <remove-project name="platform/packages/providers/DownloadProvider" />
-  <remove-project name="platform/packages/inputmethods/LatinIME" />
-  <remove-project name="platform/packages/apps/QuickSearchBox" />
-  <remove-project name="bootable/newinstaller" />
   <remove-project name="platform/packages/apps/BasicSmsReceiver" />
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/Camera2" />
+  <remove-project name="platform/packages/apps/CarrierConfig" />
+  <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
   <remove-project name="platform/packages/apps/Contacts" />
   <remove-project name="platform/packages/apps/DeskClock" />
   <remove-project name="platform/packages/apps/DevCamera" />
@@ -33,18 +16,34 @@ Definitions for generic x86 Android TV device target
   <remove-project name="platform/packages/apps/DocumentsUI" />
   <remove-project name="platform/packages/apps/Eleven" />
   <remove-project name="platform/packages/apps/Email" />
+  <remove-project name="platform/packages/apps/EmergencyInfo" />
   <remove-project name="platform/packages/apps/ExactCalculator" />
   <remove-project name="platform/packages/apps/Gallery2" />
   <remove-project name="platform/packages/apps/HTMLViewer" />
   <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/ManagedProvisioning" />
   <remove-project name="platform/packages/apps/Messaging" />
+  <remove-project name="platform/packages/apps/OneTimeInitializer" />
   <remove-project name="platform/packages/apps/Phone" />
+  <remove-project name="platform/packages/apps/Provision" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/StorageManager" />
   <remove-project name="platform/packages/apps/Taskbar" />
+  <remove-project name="platform/packages/apps/WallpaperPicker" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <remove-project name="platform/packages/providers/BlockedNumberProvider" />
+  <remove-project name="platform/packages/providers/BookmarkProvider" />
+  <remove-project name="platform/packages/providers/CallLogProvider" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
   <remove-project name="platform/packages/providers/UserDictionaryProvider" />
   <remove-project name="platform/packages/screensavers/Basic" />
   <remove-project name="platform/packages/screensavers/PhotoTable" />
   <remove-project name="platform/packages/services/Analytics" />
+  <remove-project name="platform/packages/services/BuiltInPrintService" />
+  <remove-project name="platform/packages/services/Mms" />
+  <remove-project name="platform/packages/wallpapers/LivePicker" />
 
   <remote name="kyvaith" fetch="https://github.com/kyvaith/"  />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" clone-depth="1" revision="oreo-x86" remote="kyvaith" />

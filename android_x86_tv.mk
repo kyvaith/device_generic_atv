@@ -21,7 +21,6 @@ $(call inherit-product, device/generic/common/x86.mk)
 
 # include atv default stuff
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioTv.mk)
-$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
 $(call inherit-product-if-exists, frameworks/base/data/fonts/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/dancing-script/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/carrois-gothic-sc/fonts.mk)
@@ -30,8 +29,6 @@ $(call inherit-product-if-exists, external/google-fonts/cutive-mono/fonts.mk)
 $(call inherit-product-if-exists, external/noto-fonts/fonts.mk)
 $(call inherit-product-if-exists, external/roboto-fonts/fonts.mk)
 $(call inherit-product-if-exists, external/hyphenation-patterns/patterns.mk)
-$(call inherit-product-if-exists, frameworks/base/data/keyboards/keyboards.mk)
-$(call inherit-product-if-exists, frameworks/webview/chromium/chromium.mk)
 $(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
 $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
 
