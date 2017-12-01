@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.tutorials_content.android=android8
 
+# Override for buildin Houdini libs
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
+    ro.dalvik.vm.native.bridge=libhoudini.so
+
 # Content for ATV Tutorials / Post-Setup Tour
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tutorial-library-google.zip.etag:system/media/tutorial-library-google.zip.etag \
