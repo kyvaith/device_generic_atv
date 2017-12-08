@@ -40,11 +40,13 @@ Definitions for generic x86 Android TV device target
   <remove-project name="platform/packages/screensavers/PhotoTable" />
   <remove-project name="platform/packages/services/BuiltInPrintService" />
   <remove-project name="platform/packages/services/Mms" />
+  <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/packages/wallpapers/LivePicker" />
 
   <remote name="kyvaith" fetch="https://github.com/kyvaith/"  />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
   <project path="vendor/intel/houdini" name="vendor_intel_houdini" clone-depth="1" revision="oreo-x86" remote="kyvaith" />
+  <project path="packages/apps/Kodi" name="packages_apps_Kodi" clone-depth="1" revision="18-alpha" remote="kyvaith" />
   <project path="vendor/opengapps/build" name="aosp_build" clone-depth="1" revision="oreo" remote="kyvaith" />
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="kyvaith" />
   <project path="vendor/opengapps/sources/x86" name="x86" clone-depth="1" revision="master" remote="kyvaith" />

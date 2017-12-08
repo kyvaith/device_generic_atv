@@ -26,8 +26,10 @@ $(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
 # TODO: remove when Android-x86 project will provide them
 # include prebuild houdini libs
 $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.dalvik.vm.native.bridge=libhoudini.so
+
+# Need to be overwritten in device/generic/common/nativebridge/nativebridge.mk
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    ro.dalvik.vm.native.bridge=libhoudini.so
 
 # Target
 PRODUCT_NAME := android_tv_x86
@@ -265,3 +267,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.intel.isv.vpp=1 \
     persist.intel.isv.frc=1
 
+# Third party apps
+PRODUCT_PACKAGES += \
+    Kodi \
