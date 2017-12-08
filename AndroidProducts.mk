@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/android_x86_tv.mk
+    $(LOCAL_DIR)/android_tv_x86.mk

@@ -23,6 +23,7 @@ Definitions for generic x86 Android TV device target
   <remove-project name="platform/packages/apps/ManagedProvisioning" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/OneTimeInitializer" />
+  <remove-project name="platform/packages/apps/PackageInstaller" />
   <remove-project name="platform/packages/apps/Phone" />
   <remove-project name="platform/packages/apps/Provision" />
   <remove-project name="platform/packages/apps/QuickSearchBox" />
@@ -34,14 +35,11 @@ Definitions for generic x86 Android TV device target
   <remove-project name="platform/packages/providers/BlockedNumberProvider" />
   <remove-project name="platform/packages/providers/BookmarkProvider" />
   <remove-project name="platform/packages/providers/CallLogProvider" />
-  <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/providers/TelephonyProvider" />
-  <remove-project name="platform/packages/providers/UserDictionaryProvider" />
   <remove-project name="platform/packages/screensavers/Basic" />
   <remove-project name="platform/packages/screensavers/PhotoTable" />
   <remove-project name="platform/packages/services/BuiltInPrintService" />
   <remove-project name="platform/packages/services/Mms" />
-  <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/packages/wallpapers/LivePicker" />
 
   <remote name="kyvaith" fetch="https://github.com/kyvaith/"  />

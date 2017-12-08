@@ -20,6 +20,4 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo android_x86_tv-eng
-add_lunch_combo android_x86_tv-userdebug
-add_lunch_combo android_x86_tv-user
+add_lunch_combo android_tv_x86-userdebug
