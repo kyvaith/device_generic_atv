@@ -1,4 +1,7 @@
 # AndroidTV-AOSP
+
+Edit Packages.mk to change packages that would normally be installed be default
+
 Definitions for generic x86 Android TV device target
 ```
   <remove-project name="platform/bootable/newinstaller" />
