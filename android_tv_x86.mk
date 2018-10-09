@@ -17,7 +17,7 @@
 #
 
 # includes the base of Android-x86 platform
-$(call inherit-product, device/generic/common/x86.mk)
+$(call inherit-product, $(LOCAL_PATH)/x86.mk)
 
 # include atv default stuff
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioTv.mk)
