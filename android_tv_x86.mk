@@ -2,7 +2,7 @@
 # Copyright (C) 2017 The Android-x86 Open Source Project
 #
 # by Tomasz Witke <kyvaith@gmail.com>
-#
+# by jaynowak <jaynowak76@gmail.com>
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -32,8 +32,8 @@ $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
 #    ro.dalvik.vm.native.bridge=libhoudini.so
 
 # Target
-PRODUCT_NAME := android_tv_x86
-PRODUCT_DEVICE := x86
+PRODUCT_NAME := homestar
+PRODUCT_DEVICE := Android TV x86
 PRODUCT_BRAND := Android
 TARGET_KERNEL_ARCH := x86_64
 
@@ -268,5 +268,4 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.intel.isv.frc=1
 
 # Third party apps
-PRODUCT_PACKAGES += \
-    Kodi \
+
